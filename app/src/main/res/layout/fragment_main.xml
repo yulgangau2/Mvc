@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/ImgLogo"
+                android:layout_width="272dp"
+                android:layout_height="143dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/logo" />
+
+
+            <TextView
+                android:id="@+id/tvEGV"
+                android:freezesText="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_below="@+id/ImgLogo"
+                android:fontFamily=""
+                android:text="English Gift Voucher"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/EditTextUserName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/tvEGV"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/input_background"
+                android:gravity="center"
+                android:hint="CMU Email"
+                android:inputType="text"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/EditTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/EditTextUserName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/input_background"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/BtnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/EditTextPassword"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_btn_default"
+                android:text="LOG IN"
+                android:layout_marginLeft="27dp"
+                android:layout_marginRight="27dp"
+                android:textColor="#825423" />
+
+            <TextView
+                android:freezesText="true"
+                android:id="@+id/tvforgotpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/BtnLogin"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                android:text="Forget password?"
+                android:textColor="#000000" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
